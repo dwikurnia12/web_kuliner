@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SoloRasa – Jelajah Kuliner Solo Tanpa Ribet</title>
+<meta name="description" content="Cari makanan, harga, dan informasi penting kuliner Solo dalam satu tempat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#app">Lewati ke konten</a>
+<header class="site-header">
+  <a class="brand" href="#/" aria-label="SoloRasa, ke beranda">SoloRasa</a>
+  <nav class="main-nav" aria-label="Navigasi utama">
+    <a href="#/" data-nav="home">Beranda</a>
+    <a href="#/jelajah" data-nav="jelajah">Jelajah</a>
+    <a href="#/peta" data-nav="peta">Peta</a>
+  </nav>
+  <a class="btn btn-sm btn-outline" href="#/filter">Filter</a>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <strong class="brand">SoloRasa</strong>
+  <p>Jelajahi rasa, temukan cerita di setiap sudut Solo.</p>
+  <nav aria-label="Tautan footer">
+    <a href="#/jelajah">Jelajah kuliner</a>
+    <a href="#/peta">Peta</a>
+    <a href="#/filter">Filter</a>
+    <button type="button" class="linklike" data-wa>Hubungi penjual</button>
+  </nav>
+</footer>
+
+<nav class="tabbar" aria-label="Navigasi bawah">
+  <a href="#/" data-nav="home"><span aria-hidden="true">⌂</span>Beranda</a>
+  <a href="#/jelajah" data-nav="jelajah"><span aria-hidden="true">☰</span>Jelajah</a>
+  <a href="#/peta" data-nav="peta"><span aria-hidden="true">⌖</span>Peta</a>
+</nav>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="state-icon" aria-hidden="true">💬</div>
+    <h2 id="modal-title">Hubungi penjual via WhatsApp</h2>
+    <div class="wa-card">
+      <small>Nomor WhatsApp penjual</small>
+      <strong>0812 3456-7890</strong>
+    </div>
+    <p>Tanyakan menu, harga, atau stok sebelum datang.</p>
+    <a class="btn btn-wa" id="wa-link" href="https://wa.me/6281234567890" target="_blank" rel="noopener">Buka WhatsApp</a>
+    <button type="button" class="btn btn-outline" data-close>Kembali ke menu dan harga</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
